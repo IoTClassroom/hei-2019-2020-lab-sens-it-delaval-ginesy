@@ -30,10 +30,9 @@ SIZE_OUTPUT = $(OUTPUT_NAME).siz
 # ---------
 # TOOLCHAIN
 # ---------
-CC = arm-none-eabi-gcc
-BIN_TOOL  = arm-none-eabi-objcopy
-SIZE_TOOL = arm-none-eabi-size
-
+CC = Desktop/tp_sensit/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc
+BIN_TOOL  = Desktop/tp_sensit/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-objcopy
+SIZE_TOOL = Desktop/tp_sensit/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-size
 
 # -------------------
 # COMPILATION OPTIONS
