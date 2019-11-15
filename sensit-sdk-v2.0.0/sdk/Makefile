@@ -30,9 +30,9 @@ SIZE_OUTPUT = $(OUTPUT_NAME).siz
 # ---------
 # TOOLCHAIN
 # ---------
-CC = /Users/christopheginesy/Downloads/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc
-BIN_TOOL  = /Users/christopheginesy/Downloads/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-objcopy
-SIZE_TOOL = /Users/christopheginesy/Downloads/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-size
+CC = /Users/christopheginesy/Documents/ITTools/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc
+BIN_TOOL  = /Users/christopheginesy/Documents/ITTools/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-objcopy
+SIZE_TOOL = /Users/christopheginesy/Documents/ITTools/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-size
 
 # -------------------
 # COMPILATION OPTIONS
