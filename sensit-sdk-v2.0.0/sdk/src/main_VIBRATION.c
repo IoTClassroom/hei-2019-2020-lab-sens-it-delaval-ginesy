@@ -37,7 +37,9 @@ int main()
     /* Discovery payload variable */
     discovery_data_s data = {0};
     discovery_payload_s payload;
-
+    
+    fxos8700_data_s* acc;
+    
     /* Start of initialization */
 
     /* Configure button */
@@ -127,6 +129,8 @@ int main()
             /* Clear interrupt */
             pending_interrupt &= ~INTERRUPT_MASK_FXOS8700;
         }
+        
+        FXOS8700_read_acceleration(acc);
 
         /* Check if we need to send a message */
         if (send == TRUE)
@@ -135,7 +139,7 @@ int main()
             DISCOVERY_build_payload(&payload, MODE_VIBRATION, &data);
 
             /* Send the message */
-            err = RADIO_API_send_message(RGB_BLUE, (u8*)&payload, DISCOVERY_PAYLOAD_SIZE, FALSE, NULL);
+            err = RADIO_API_send_message(RGB_BLUE, (u8*)&acc, DISCOVERY_PAYLOAD_SIZE, FALSE, NULL);
             /* Parse the error code */
             ERROR_parser(err);
 
