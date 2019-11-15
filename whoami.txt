@@ -1,3 +1,4 @@
-Sens'it ID: ABCDEF
-Firstnames: Bob-Jacques
-Lastnames: Dupont-Joe
+Sens'it ID: B43665
+Use Case : 2 - Fall detection
+Firstnames: Alexandre-Guillaume
+Lastnames: Ginesy-de Lacoste de Laval
